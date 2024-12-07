@@ -12,6 +12,9 @@ while true; do
   TIMESTAMP=$(printf "%.6f\n" "$(date +%s.%N)")
 
 ## The curl request below should be retrieved using Proxyman on iOS
+## Replace this entire section with your copied curl command from Proxyman
+## Then, change the "timestamp" header line to be:
+## -H 'timestamp: '"$TIMESTAMP" \
 
   curl \
   -X POST \
