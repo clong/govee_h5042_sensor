@@ -1,0 +1,12 @@
+[Unit]
+Description=Script to pull temps from govee sensors
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/opt/govee_h5042_sensor/get_temps.sh
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
